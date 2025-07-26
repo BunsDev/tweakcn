@@ -1,7 +1,7 @@
 import { getCurrentUserId, logError } from "@/lib/shared";
 import { validateSubscriptionAndUsage } from "@/lib/subscription";
-import { SubscriptionStatus } from "@/types/subscription";
-import { NextRequest, NextResponse } from "next/server";
+import type { SubscriptionStatus } from "@/types/subscription";
+import { type NextRequest, NextResponse } from "next/server";
 
 export async function GET(request: NextRequest) {
   try {
